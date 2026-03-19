@@ -1275,11 +1275,20 @@ a {
    Responsive - Desktop (1024px+)
    ═══════════════════════════════════════════ */
 @media (min-width: 1024px) {
+  body {
+    background-color: var(--color-forest-dark);
+  }
+
+  .curtain,
   .main-content {
     max-width: 480px;
     margin: 0 auto;
+  }
+
+  .main-content {
     box-shadow: 0 0 60px rgba(74, 94, 59, 0.08);
     min-height: 100vh;
+    background-color: var(--color-bg);
   }
 
   .hero {
