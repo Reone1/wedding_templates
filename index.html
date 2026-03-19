@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모바일 청첩장 템플릿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #f8f6f3;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .header h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #2c2c2c;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+
+    .header p {
+      font-size: 14px;
+      color: #888;
+      font-weight: 300;
+    }
+
+    .grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .card-image {
+      width: 100%;
+      aspect-ratio: 1200 / 630;
+      object-fit: cover;
+      display: block;
+      background: #eee;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 6px;
+      color: #2c2c2c;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: #999;
+      font-weight: 300;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 12px;
+      color: #bbb;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 640px) {
+      .header { padding: 40px 16px 28px; }
+      .header h1 { font-size: 22px; letter-spacing: 2px; }
+      .grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px 40px;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>모바일 청첩장 템플릿</h1>
+    <p>12가지 디자인 중 원하는 스타일을 선택하세요</p>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="./classic-elegant/">
+      <img class="card-image" src="./classic-elegant/images/og/1.jpg" alt="클래식 엘레강스">
+      <div class="card-body">
+        <div class="card-title">Classic Elegant</div>
+        <div class="card-desc">클래식하고 우아한 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./korean-traditional/">
+      <img class="card-image" src="./korean-traditional/images/og/1.jpg" alt="한국 전통">
+      <div class="card-body">
+        <div class="card-title">Korean Traditional</div>
+        <div class="card-desc">한국 전통 모바일 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./luxury-gold/">
+      <img class="card-image" src="./luxury-gold/images/og/1.jpg" alt="럭셔리 골드">
+      <div class="card-body">
+        <div class="card-title">Luxury Gold</div>
+        <div class="card-desc">럭셔리한 골드 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./midnight-navy/">
+      <img class="card-image" src="./midnight-navy/images/og/1.jpg" alt="미드나잇 네이비">
+      <div class="card-body">
+        <div class="card-title">Midnight Navy</div>
+        <div class="card-desc">깊고 세련된 네이비 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./modern-minimal/">
+      <img class="card-image" src="./modern-minimal/images/og/1.jpg" alt="모던 미니멀">
+      <div class="card-body">
+        <div class="card-title">Modern Minimal</div>
+        <div class="card-desc">모던하고 깔끔한 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./nature-green/">
+      <img class="card-image" src="./nature-green/images/og/1.jpg" alt="네이처 그린">
+      <div class="card-body">
+        <div class="card-title">Nature Green</div>
+        <div class="card-desc">자연의 싱그러운 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./original-warm/">
+      <img class="card-image" src="./original-warm/images/og/1.jpg" alt="오리지널 웜">
+      <div class="card-body">
+        <div class="card-title">Original Warm</div>
+        <div class="card-desc">따뜻한 감성의 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./pastel-dream/">
+      <img class="card-image" src="./pastel-dream/images/og/1.jpg" alt="파스텔 드림">
+      <div class="card-body">
+        <div class="card-title">Pastel Dream</div>
+        <div class="card-desc">몽환적인 파스텔 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./romantic-flower/">
+      <img class="card-image" src="./romantic-flower/images/og/1.jpg" alt="로맨틱 플라워">
+      <div class="card-body">
+        <div class="card-title">Romantic Flower</div>
+        <div class="card-desc">로맨틱한 꽃 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./simple-clean/">
+      <img class="card-image" src="./simple-clean/images/og/1.jpg" alt="심플 클린">
+      <div class="card-body">
+        <div class="card-title">Simple Clean</div>
+        <div class="card-desc">심플하고 깨끗한 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./vintage-film/">
+      <img class="card-image" src="./vintage-film/images/og/1.jpg" alt="빈티지 필름">
+      <div class="card-body">
+        <div class="card-title">Vintage Film</div>
+        <div class="card-desc">빈티지 필름 감성 청첩장</div>
+      </div>
+    </a>
+
+    <a class="card" href="./watercolor-soft/">
+      <img class="card-image" src="./watercolor-soft/images/og/1.jpg" alt="수채화 소프트">
+      <div class="card-body">
+        <div class="card-title">Watercolor Soft</div>
+        <div class="card-desc">부드러운 수채화 청첩장</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    &copy; 모바일 청첩장 템플릿 컬렉션
+  </div>
+</body>
+</html>
