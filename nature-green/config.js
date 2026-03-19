@@ -20,8 +20,8 @@ const CONFIG = {
   groom: {
     name: "최재원",
     nameEn: "Jaewon",
-    father: "아버지",
-    mother: "어머니",
+    father: "최태현",
+    mother: "박지현",
     fatherDeceased: false,
     motherDeceased: false
   },
@@ -29,8 +29,8 @@ const CONFIG = {
   bride: {
     name: "안채원",
     nameEn: "Chaewon",
-    father: "아버지",
-    mother: "어머니",
+    father: "안현수",
+    mother: "이선미",
     fatherDeceased: false,
     motherDeceased: false
   },
