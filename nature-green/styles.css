@@ -505,6 +505,15 @@ a {
   margin-bottom: var(--spacing-md);
 }
 
+.hero__bottom {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  color: var(--color-white);
+  padding-bottom: calc(var(--spacing-lg) + var(--safe-bottom));
+}
+
 .hero__date,
 .hero__venue {
   font-family: var(--font-sans);
@@ -523,7 +532,7 @@ a {
 .countdown {
   position: relative;
   z-index: 2;
-  padding: var(--spacing-lg) var(--spacing-md) calc(var(--spacing-lg) + var(--safe-bottom));
+  padding: var(--spacing-md) var(--spacing-md) 0;
   text-align: center;
   color: var(--color-white);
 }
