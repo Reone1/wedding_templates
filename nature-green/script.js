@@ -620,6 +620,18 @@
     $('#copyAddressBtn').addEventListener('click', () => {
       copyToClipboard(w.address, '주소가 복사되었습니다');
     });
+
+    // 약도 이미지 클릭 시 모달 (네비게이션 없이, 클릭하면 닫힘)
+    $('#locationMapWrap').addEventListener('click', () => {
+      openPhotoModal(['images/location/1.jpg'], 0);
+      // 모달 이미지 클릭으로도 닫히게
+      const modalImg = $('#modalImg');
+      const closeOnImgClick = () => {
+        closePhotoModal();
+        modalImg.removeEventListener('click', closeOnImgClick);
+      };
+      modalImg.addEventListener('click', closeOnImgClick);
+    });
   }
 
   /* ═══════════════════════════════════════════
