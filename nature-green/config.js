@@ -38,13 +38,13 @@ const CONFIG = {
   wedding: {
     date: "2026-05-09",
     time: "13:00",
-    venue: "예식장 이름",
-    hall: "그랜드홀 5층",
-    address: "서울특별시 강남구 테헤란로 123",
-    tel: "02-1234-5678",
+    venue: "트라디노이",
+    hall: "6층",
+    address: "서울특별시 강남구 도곡로99길 16",
+    tel: "02-567-9916",
     mapLinks: {
-      kakao: "https://map.kakao.com/",
-      naver: "https://map.naver.com/"
+      kakao: "https://place.map.kakao.com/1290739532",
+      naver: "https://map.naver.com/v5/search/트라디노이"
     }
   },
 
