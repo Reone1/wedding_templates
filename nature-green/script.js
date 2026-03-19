@@ -516,18 +516,25 @@
   let touchEndX = 0;
   let touchStartY = 0;
   let touchEndY = 0;
+  let savedScrollY = 0;
 
   function openPhotoModal(images, index) {
     modalImages = images;
     modalIndex = index;
     showModalImage();
     $('#photoModal').classList.add('is-open');
+    // 현재 스크롤 위치 저장 후 body 고정
+    savedScrollY = window.scrollY;
+    document.body.style.top = `-${savedScrollY}px`;
     document.body.classList.add('no-scroll');
   }
 
   function closePhotoModal() {
     $('#photoModal').classList.remove('is-open');
     document.body.classList.remove('no-scroll');
+    document.body.style.top = '';
+    // 저장된 스크롤 위치로 복원
+    window.scrollTo(0, savedScrollY);
   }
 
   function showModalImage() {
