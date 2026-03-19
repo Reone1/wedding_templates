@@ -18,8 +18,8 @@ const CONFIG = {
 
   // ── 메인 (히어로) ──
   groom: {
-    name: "신랑",
-    nameEn: "Groom",
+    name: "최재원",
+    nameEn: "Jaewon",
     father: "아버지",
     mother: "어머니",
     fatherDeceased: false,
@@ -27,8 +27,8 @@ const CONFIG = {
   },
 
   bride: {
-    name: "신부",
-    nameEn: "Bride",
+    name: "안채원",
+    nameEn: "Chaewon",
     father: "아버지",
     mother: "어머니",
     fatherDeceased: false,
@@ -36,8 +36,8 @@ const CONFIG = {
   },
 
   wedding: {
-    date: "2026-05-09",
-    time: "13:00",
+    date: "2026-06-13",
+    time: "17:00",
     venue: "트라디노이",
     hall: "6층",
     address: "서울특별시 강남구 도곡로99길 16",
@@ -79,7 +79,7 @@ const CONFIG = {
 
   // ── 링크 공유 시 나타나는 문구 ──
   meta: {
-    title: "신랑 ♥ 신부 결혼합니다",
-    description: "2026년 5월 9일, 소중한 분들을 초대합니다."
+    title: "최재원 ♥ 안채원 결혼합니다",
+    description: "2026년 6월 13일, 소중한 분들을 초대합니다."
   }
 };
